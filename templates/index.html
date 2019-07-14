@@ -26,7 +26,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
+    <a class="navbar-brand mr-1" href="index.html">Single User Demo</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -135,82 +135,129 @@
           <li class="breadcrumb-item active">Result</li>
         </ol>
     <!-- search box-->
-    <div class="card mb-3">
-      <div class = "card-header">
-        <form method="POST">
-        <input name = 'text' style='width:84%'>
-        <input type="submit" id="search" value="Search" style='width:15%' />
-        </form>
-      </div>
-    </div>
-        <!-- Icon Cards-->
-<!--         <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-comments"></i>
-                </div>
-                <div class="mr-5">26 New Messages!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-warning o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-list"></i>
-                </div>
-                <div class="mr-5">11 New Tasks!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-shopping-cart"></i>
-                </div>
-                <div class="mr-5">123 New Orders!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-life-ring"></i>
-                </div>
-                <div class="mr-5">13 New Tickets!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div> -->
+    <form method="POST">
+      <div class="card mb-3">
+        <div class = "card-header">
+          
+          <input name = 'text' style='width:84%'>
+          <input type="submit" id="search" value="Search" style='width:15%' />
 
+
+        </div>
+      </div>
+          <!-- Icon Cards-->
+          <div class="row">
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="card text-white bg-primary o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                    <i class="fas fa-fw fa-comments"></i>
+                  </div>
+                  <div class="mr-5">Talent Name</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="#">
+                      <datalist id="languages" style = 'width:100%'>
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JavaScript">
+                        <option value="Java">
+                        <option value="Ruby">
+                        <option value="PHP">
+                        <option value="Go">
+                        <option value="Erlang">
+                        <option value="Python">
+                        <option value="C">
+                        <option value="C#">
+                        <option value="C++">
+                      </datalist>
+                      <input type="text" list="languages" style = 'width:100%'>
+  <!--                 <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span> -->
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="card text-white bg-warning o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                    <i class="fas fa-fw fa-list"></i>
+                  </div>
+                  <div class="mr-5">Brand</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="#">
+                      <datalist id="languages1" style = 'width:100%'>
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JavaScript">
+                        <option value="Java">
+                        <option value="Ruby">
+                        <option value="PHP">
+                        <option value="Go">
+                        <option value="Erlang">
+                        <option value="Python">
+                        <option value="C">
+                        <option value="C#">
+                        <option value="C++">
+                      </datalist>
+                      <input type="text" list="languages" style = 'width:100%'>
+  <!--                 <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span> -->
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="card text-white bg-success o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                    <i class="fas fa-fw fa-shopping-cart"></i>
+                  </div>
+                  <div class="mr-5">123 New Orders!</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="#">
+                  <form action="/action_page.php" method="POST">
+                    Start date:
+                    <input type="date" id="startdate" name="startdate">
+                    Final date:
+                    <input type="date" id="enddate" name="enddate">
+                  </form>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="card text-white bg-danger o-hidden h-100">
+                <div class="card-body">
+                  <div class="card-body-icon">
+                    <i class="fas fa-fw fa-life-ring"></i>
+                  </div>
+                  <div class="mr-5">Other Topic</div>
+                </div>
+                <a class="card-footer text-white clearfix small z-1" href="#">
+                      <datalist id="languages2" style = 'width:100%'>
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JavaScript">
+                        <option value="Java">
+                        <option value="Ruby">
+                        <option value="PHP">
+                        <option value="Go">
+                        <option value="Erlang">
+                        <option value="Python">
+                        <option value="C">
+                        <option value="C#">
+                        <option value="C++">
+                      </datalist>
+                      <input type="text" list="languages" style = 'width:100%'>
+  <!--                 <span class="float-right">
+                    <i class="fas fa-angle-right"></i>
+                  </span> -->
+                </a>
+              </div>
+            </div>
+          </div>
+      </form>
+        
         <!-- Area Chart Example-->
         <div class="card mb-3">
           <div class="card-header">
